@@ -1,0 +1,5 @@
+{"event":"init"}
+{"event":"step_update","step_update":{"step_type":"user_input"}}
+{"event":"step_update","step_update":{"step_type":"error_message","text":"Recipe card unavailable."}}
+{"event":"step_update","step_update":{"step_type":"agent_response"}}
+{"event":"result","result":{"response":"Stir oats."}}

@@ -1,0 +1,6 @@
+rc=0 model=example-model files_left_in_cwd=0
+event_kinds {'init': 1, 'step_update:user_input': 1, 'step_update:tool': 2, 'step_update:agent_response': 1, 'result': 1} unparsed_lines 0
+tool_related_events 2
+  line 3 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "shell", "item": 1}}
+  line 4 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "shell", "item": 2}}
+answer_chars 0 -> /jobs/tool_shell_empty.md

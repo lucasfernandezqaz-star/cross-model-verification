@@ -1,0 +1,4 @@
+rc=0 model=example-model files_left_in_cwd=0
+event_kinds {'init': 1, 'step_update:user_input': 1, 'step_update:agent_response': 2000, 'result': 1} unparsed_lines 0
+tool_related_events 0
+answer_chars 15 -> /jobs/large_notes.md

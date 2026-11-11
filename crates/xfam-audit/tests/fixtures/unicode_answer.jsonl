@@ -1,0 +1,4 @@
+{"event":"init"}
+{"event":"step_update","step_update":{"step_type":"user_input"}}
+{"event":"step_update","step_update":{"step_type":"agent_response"}}
+{"event":"result","result":{"response":"caf\u00e9 \u8336 \ud83d\ude00 e\u0301"}}

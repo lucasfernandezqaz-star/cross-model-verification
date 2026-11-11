@@ -1,0 +1,6 @@
+{"event":"init"}
+{"event":"step_update","step_update":{"step_type":"user_input"}}
+{"event":"step_update","step_update":{"step_type":"tool","tool_name":"lookup","item":1}}
+{"event":"step_update","step_update":{"step_type":"tool","tool_name":"lookup","item":2}}
+{"event":"step_update","step_update":{"step_type":"agent_response"}}
+{"event":"result","result":{"response":""}}

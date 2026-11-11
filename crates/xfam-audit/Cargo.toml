@@ -1,0 +1,17 @@
+[package]
+name = "xfam-audit"
+version = "0.1.0"
+edition = "2021"
+description = "Audit stream-JSON transcripts for event kinds, tool events, and final answers."
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dependencies]
+
+[lib]
+name = "xfam_audit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "xfam-audit"
+path = "src/main.rs"

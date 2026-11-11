@@ -1,0 +1,5 @@
+rc=0 model=example-model files_left_in_cwd=0
+event_kinds {'init': 1, 'step_update:user_input': 1, 'step_update:error_message': 1, 'step_update:agent_response': 1, 'result': 1} unparsed_lines 0
+tool_related_events 1
+  line 3 step_update:error_message: {"event": "step_update", "step_update": {"step_type": "error_message", "text": "Recipe card unavailable."}}
+answer_chars 10 -> /jobs/recipe_answer.md

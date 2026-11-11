@@ -1,0 +1,24 @@
+rc=0 model=example-model files_left_in_cwd=0
+event_kinds {'init': 1, 'step_update:tool': 24, 'result': 1} unparsed_lines 0
+tool_related_events 24
+  line 2 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 1}}
+  line 3 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 2}}
+  line 4 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 3}}
+  line 5 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 4}}
+  line 6 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 5}}
+  line 7 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 6}}
+  line 8 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 7}}
+  line 9 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 8}}
+  line 10 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 9}}
+  line 11 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 10}}
+  line 12 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 11}}
+  line 13 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 12}}
+  line 14 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 13}}
+  line 15 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 14}}
+  line 16 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 15}}
+  line 17 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 16}}
+  line 18 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 17}}
+  line 19 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 18}}
+  line 20 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 19}}
+  line 21 step_update:tool: {"event": "step_update", "step_update": {"step_type": "tool", "tool_name": "ruler", "item": 20}}
+answer_chars 9 -> /jobs/tool_cap.md
