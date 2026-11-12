@@ -1,6 +1,8 @@
 # Cross-lab model review: study protocol
 
 Status: DRAFT, not frozen (2026-11-11). No scored run has been made under this protocol.
+
+Not yet settled, and to be fixed before the freeze: which labs author and which review each item (reciprocal assignments), the models used to generate and to review, checks for unintended defects in clean base items, how clean and defective versions are kept apart across sessions, how repeated runs are aggregated, the review baseline of arm C, validation of the run pipeline, and who scores judgment cases when only two labs take part (a label-blinded person is the fallback).
 Licence: CC BY 4.0.
 
 ## 1. Question
@@ -27,6 +29,7 @@ Rules for every item:
 
 - Each defective item has a clean counterpart that is identical except for the defect. Clean items measure false positives.
 - Each defect carries a documented class (for example: wrong constant, wrong unit, off-by-one boundary, sign error, missing refusal condition).
+- For arm A, a model from one participating lab generates each clean base item from the benchmark builder's specification. Its lab is recorded as the author lab for both the clean and the defective version. The person injects the documented defect without model assistance.
 - Ground truth is checked by a person before the item enters the pool. For code items, compiler and test output establish the facts.
 - Items are synthetic. No private code and no market data enter the pool.
 
@@ -63,8 +66,8 @@ A reviewer that does not answer is not scored as a miss in the primary compariso
 
 ## 6. Order of work
 
-1. Pilot on a small set of items, used only to estimate paired disagreement and the dependence between runs of the same item.
-2. Sample sizes chosen from the pilot estimates for the primary comparison. Pilot items are not reused in scored runs.
+1. Pilot on separate items to estimate paired disagreement, within-item dependence, non-answer rates and token usage, for feasibility and sample-size planning. Pilot items are excluded from scored evaluation.
+2. Sample sizes chosen from the pilot estimates for the primary comparison, against a precision target declared before the pilot results are read (proposed: a target 95% confidence-interval half-width of at most 10 percentage points for the paired difference; a planning target, not a guarantee of the precision achieved). The rationale is published before scored runs. If the pilot shows that an informative design does not fit the available budget, that is reported and the protocol is revised before any scored run.
 3. Freeze: item pool, keys, prompts, model versions, settings, scoring script, adjudication rules, the primary comparison, the analysis plan and the stopping rule. The digests of section 2 are published.
 4. Scored runs.
 5. Publication of prompts, items, keys, scoring script, model configurations, adjudication records, aggregate results and reproducible failure reports.
@@ -83,5 +86,6 @@ For every run: provider, exact model identifier, date, reasoning or effort setti
 
 - Planted defects may be easier or harder to find than real ones. The study measures detection of the planted classes only.
 - Models change. Results hold for the recorded versions.
-- A single person builds the items and checks the ground truth. Errors in the keys are possible; corrections after unblinding are logged with their date and reason.
+- A single person specifies the items, injects the defects and checks the ground truth. Errors in the keys are possible; corrections after unblinding are logged with their date and reason.
+- The comparison concerns the review of defects injected by a person into model-generated material. It does not show how reviewers detect errors that a lab's model makes on its own.
 - The wrappers used to run the models record tool events; they are not a security sandbox.
