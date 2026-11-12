@@ -69,14 +69,14 @@ How to read the pooled number. If a reviewer found all S planted controls, the o
 
 | Controls found, none missed | Lower bound |
 |---|---|
-| 2 | 0.224 |
-| 4 | 0.473 |
+| 2 | 0.223 |
+| 4 | 0.472 |
 | 14 | 0.807 |
 | 38 | 0.924 |
 
-So one job with four controls certifies very little, and at least 14 hits with no miss are needed before the bound passes 0.80. Three cautions apply to every such number:
+Values are rounded down, so a printed bound never exceeds the computed one. One job with four controls certifies very little, and at least 14 hits with no miss are needed before the bound passes 0.80. Three cautions apply to every such number:
 
-- Controls in related jobs are not independent trials; the bound is optimistic.
+- The bound assumes independent, exchangeable trials. Controls in related jobs are not independent, so for them the bound does not hold as stated.
 - It is a bound on finding planted single-line contradictions. Real defects can be harder.
 - When every reviewer finds every control, the controls cannot rank the reviewers.
 

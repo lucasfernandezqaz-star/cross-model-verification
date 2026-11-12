@@ -35,8 +35,8 @@ Each job is one review of one document by a model from a different lab than the 
 
 ## How to read these numbers
 
-- With all S controls found, the one-sided 95% lower bound on the probability of finding such a control is 0.05^(1/S) if the trials are independent (Clopper-Pearson): 0.924 for 38 of 38. Jobs on related documents are not independent trials, so the bound is optimistic.
-- For 67 of 70, the one-sided 95% Clopper-Pearson lower bound under the same assumption is 0.893.
+- With all S controls found, the one-sided 95% lower bound on the probability of finding such a control is 0.05^(1/S) if the trials are independent (Clopper-Pearson): 0.924 for 38 of 38. The bound assumes independent, exchangeable trials; jobs on related documents are not independent, so for them it does not hold as stated.
+- For 67 of 70, the one-sided 95% Clopper-Pearson lower bound under the same assumption is 0.892. Bounds are rounded down.
 - These are detection rates for planted single-line contradictions. They are not rates for real defects, which can be harder to find, and they say nothing about false positives: no clean documents were included.
 - The reviewers worked in different modes on different documents. The rows cannot be used to rank the models.
 - All controls were planted and scored by models of one lab (Anthropic), under the scoring rule in `METHOD.md`. No second scorer checked the counts.
